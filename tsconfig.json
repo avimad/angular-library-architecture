@@ -17,7 +17,21 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "oe-core": [
+        "dist/oe-core"
+      ],
+      "oe-core/*": [
+        "dist/oe-core/*"
+      ],
+      "oe-auth": [
+        "dist/oe-auth"
+      ],
+      "oe-auth/*": [
+        "dist/oe-auth/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
