@@ -194,6 +194,111 @@
           }
         }
       }
+    },
+    "oeServices": {
+      "projectType": "library",
+      "root": "projects/oe-services",
+      "sourceRoot": "projects/oe-services/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/oe-services/tsconfig.lib.json",
+            "project": "projects/oe-services/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/oe-services/src/test.ts",
+            "tsConfig": "projects/oe-services/tsconfig.spec.json",
+            "karmaConfig": "projects/oe-services/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/oe-services/tsconfig.lib.json",
+              "projects/oe-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "oeDirectives": {
+      "projectType": "library",
+      "root": "projects/oe-directives",
+      "sourceRoot": "projects/oe-directives/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/oe-directives/tsconfig.lib.json",
+            "project": "projects/oe-directives/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/oe-directives/src/test.ts",
+            "tsConfig": "projects/oe-directives/tsconfig.spec.json",
+            "karmaConfig": "projects/oe-directives/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/oe-directives/tsconfig.lib.json",
+              "projects/oe-directives/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "oePipes": {
+      "projectType": "library",
+      "root": "projects/oe-pipes",
+      "sourceRoot": "projects/oe-pipes/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/oe-pipes/tsconfig.lib.json",
+            "project": "projects/oe-pipes/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/oe-pipes/src/test.ts",
+            "tsConfig": "projects/oe-pipes/tsconfig.spec.json",
+            "karmaConfig": "projects/oe-pipes/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/oe-pipes/tsconfig.lib.json",
+              "projects/oe-pipes/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "oneERP"
 }

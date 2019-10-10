@@ -30,6 +30,24 @@
       ],
       "oe-auth/*": [
         "dist/oe-auth/*"
+      ],
+      "oe-services": [
+        "dist/oe-services"
+      ],
+      "oe-services/*": [
+        "dist/oe-services/*"
+      ],
+      "oe-directives": [
+        "dist/oe-directives"
+      ],
+      "oe-directives/*": [
+        "dist/oe-directives/*"
+      ],
+      "oe-pipes": [
+        "dist/oe-pipes"
+      ],
+      "oe-pipes/*": [
+        "dist/oe-pipes/*"
       ]
     }
   },
