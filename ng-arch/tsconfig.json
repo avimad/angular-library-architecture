@@ -17,7 +17,45 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "core": [
+        "dist/core"
+      ],
+      "core/*": [
+        "dist/core/*"
+      ],
+      "custom-components": [
+        "dist/custom-components"
+      ],
+      "custom-components/*": [
+        "dist/custom-components/*"
+      ],
+      "custom-directives": [
+        "dist/custom-directives"
+      ],
+      "custom-directives/*": [
+        "dist/custom-directives/*"
+      ],
+      "custom-services": [
+        "dist/custom-services"
+      ],
+      "custom-services/*": [
+        "dist/custom-services/*"
+      ],
+      "custom-pipes": [
+        "dist/custom-pipes"
+      ],
+      "custom-pipes/*": [
+        "dist/custom-pipes/*"
+      ],
+      "auth": [
+        "dist/auth"
+      ],
+      "auth/*": [
+        "dist/auth/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
